@@ -1,6 +1,4 @@
-import { Canvas } from '@react-three/fiber'
 import { projects } from '../constants/projects'
-import { PortfolioImageWithShaders } from '../components/ImageWithShaders'
 import { PortfolioScene } from '../components/PortfolioScene'
 
 

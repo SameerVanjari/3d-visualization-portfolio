@@ -1,6 +1,6 @@
 import { Environment, Html, OrbitControls } from '@react-three/drei';
 import { Canvas, useLoader } from '@react-three/fiber';
-import React, { Suspense, useState } from 'react'
+import { Suspense, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import { projects } from '../constants/projects';
 import { textures } from '../constants/textures';

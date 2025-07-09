@@ -4,9 +4,6 @@ import { useFrame, useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three'
 import * as THREE from 'three'
 import {
-    ParticleImageShaderImpl,
-    PaperEffectShaderImpl,
-    CombinedEffectShaderImpl,
     ParticleImageShader,
     PaperEffectShader,
     CombinedEffectShader

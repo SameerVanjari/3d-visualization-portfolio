@@ -76,7 +76,7 @@ const HoverImage: React.FC<HoverImageProps> = ({
 
     // Mouse position for interactive effects
     const mouse = useRef<THREE.Vector2>(new THREE.Vector2(0, 0))
-    const { camera, gl } = useThree()
+    const { gl } = useThree()
 
     // Create shader material based on effect type
     const material = useMemo(() => {
@@ -216,9 +216,12 @@ export const HoverImageGrid: React.FC<ImageGridProps> = ({
     columns = 3,
     spacing = 2.5,
     imageSize = [2, 2],
+    // @ts-ignore
     hoverIntensity = 1.0,
+    // @ts-ignore
     animationSpeed = 1.0
 }) => {
+    // @ts-ignore
     const [hoveredImage, setHoveredImage] = useState<string | null>(null)
     const [isMobile, setIsMobile] = useState(false)
 

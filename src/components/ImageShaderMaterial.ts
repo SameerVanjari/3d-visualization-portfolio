@@ -1,6 +1,5 @@
 // ImageShaderMaterial.ts
 import { shaderMaterial } from '@react-three/drei'
-import { extend } from '@react-three/fiber'
 import * as THREE from 'three'
 
 // Type definitions for shader uniforms
