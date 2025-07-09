@@ -1,4 +1,4 @@
-import { Environment, OrbitControls } from '@react-three/drei';
+import { Environment, Html, OrbitControls } from '@react-three/drei';
 import { Canvas, useLoader } from '@react-three/fiber';
 import React, { Suspense, useState } from 'react'
 import { Link, useParams } from 'react-router'
@@ -11,13 +11,14 @@ import { MoveLeft } from 'lucide-react';
 const ProjectDetails = () => {
     const params = useParams();
     const currentPage = params?.slug;
-    const currentProject = projects.find(project => project.path.split('/')[1] == currentPage);
-    const currentTextureList = currentProject && textures[currentProject.textures]
-    const textureList = currentTextureList?.map(text => '/textures' + text.texture);
+    const currentProject = projects?.find(project => project.path.split('/')[1] == currentPage);
+    const currentTextureList = currentProject && currentProject.textures !== undefined
+        ? textures[currentProject.textures as keyof typeof textures]
+        : undefined;
+    const textureList = currentTextureList?.map((text: { texture: string }) => '/textures' + text.texture);
     const texts = useLoader(RGBELoader, textureList as string[])
 
     const [currentText, setCurrentText] = useState(0);
-
 
     return (
         <div className='page-container'>
@@ -39,12 +40,28 @@ const ProjectDetails = () => {
                         <mesh>
                             <sphereGeometry args={[60, 65, 65]} />
                             <meshStandardMaterial map={texts[currentText]} side={THREE.BackSide} />
+                            {
+                                currentTextureList?.[currentText]?.hotspots.map((hotspot) => (
+                                    <mesh key={hotspot.id} position={hotspot.position} scale={[1, 1, 1]}>
+                                        <Html>
+                                            <div className='info-point' >
+                                                i
+                                            </div>
+                                            <div className='info-text'>
+                                                <h4>{hotspot.title}</h4>
+                                                <hr />
+                                                <p>{hotspot.description}</p>
+                                            </div>
+                                        </Html>
+                                    </mesh>
+                                ))
+                            }
                         </mesh>
                     </Suspense>
                 </Canvas>
             </div>
 
-        </div>
+        </div >
     )
 }
 
