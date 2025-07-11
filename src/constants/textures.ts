@@ -1,4 +1,4 @@
-type Hotspot = {
+export type Hotspot = {
     id: string
     position: [number, number, number]
     description: string;
