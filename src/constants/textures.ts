@@ -30,7 +30,7 @@ function randomPositionInsideSphere(radius: number = 60): [number, number, numbe
 export const textures: Record<string, TextureItem[]> = {
     gym: [
         {
-            texture: '/gym/gym_entrance_4k.hdr',
+            texture: '/gym/gym_entrance_2k.hdr',
             label: "Entrance",
             hotspots: [{
                 id: 'gym-0',
@@ -40,7 +40,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/gym/gym_01_4k.hdr',
+            texture: '/gym/gym_01_2k.hdr',
             label: "Gym",
             hotspots: [{
                 id: 'gym-1',
@@ -50,7 +50,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/gym/wrestling_gym_4k.hdr',
+            texture: '/gym/wrestling_gym_2k.hdr',
             label: "Wrestling Gym",
             hotspots: [{
                 id: 'gym-2',
@@ -60,7 +60,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/gym/climbing_gym_4k.hdr',
+            texture: '/gym/climbing_gym_2k.hdr',
             label: "Climbing Gym",
             hotspots: [{
                 id: 'gym-3',
@@ -70,7 +70,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/gym/yoga_room_4k.hdr',
+            texture: '/gym/yoga_room_2k.hdr',
             label: "Yoga room",
             hotspots: [{
                 id: 'gym-4',
@@ -83,7 +83,7 @@ export const textures: Record<string, TextureItem[]> = {
     ],
     realEstate: [
         {
-            texture: '/real-estate/reading_room_4k.hdr',
+            texture: '/real-estate/reading_room_2k.hdr',
             label: 'Reading room',
             hotspots: [{
                 id: 'real_estate-0',
@@ -93,7 +93,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/real-estate/photo_studio_loft_hall_4k.hdr',
+            texture: '/real-estate/photo_studio_loft_hall_2k.hdr',
             label: 'Photo studio Loft',
             hotspots: [{
                 id: 'real_estate-1',
@@ -103,7 +103,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/real-estate/modern_bathroom_4k.hdr',
+            texture: '/real-estate/modern_bathroom_2k.hdr',
             label: 'Bathroom',
             hotspots: [{
                 id: 'real_estate-2',
@@ -113,7 +113,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/real-estate/storeroom_4k.hdr',
+            texture: '/real-estate/storeroom_2k.hdr',
             label: 'Store room',
             hotspots: [{
                 id: 'real_estate-3',
@@ -123,7 +123,7 @@ export const textures: Record<string, TextureItem[]> = {
             }]
         },
         {
-            texture: '/real-estate/small_empty_room_1_4k.hdr',
+            texture: '/real-estate/small_empty_room_1_2k.hdr',
             label: 'Small empty room',
             hotspots: [{
                 id: 'real_estate-4',
@@ -135,7 +135,7 @@ export const textures: Record<string, TextureItem[]> = {
     ],
     museum: [
         {
-            texture: '/hall_of_mammals_4k.hdr',
+            texture: '/hall_of_mammals_2k.hdr',
             label: 'Hall of Mammals',
             hotspots: [{
                 id: 'museum-0',
